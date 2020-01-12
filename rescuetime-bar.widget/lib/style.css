@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility
+}
+
+#rescuetime-bar-widget-index-coffee {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+    width: 100%;
+}
+
+.rescuetime-container {
+  height: 5px;
+  line-height: 15px;
+  overflow: hidden;
+  color: #7d7d7d;
+  width: 100%;
+  display: flex;
+    background-color: rgba(0,0,0,.6);
+    opacity: .8;
+    transition: all 500ms;
+}
+
+.rescuetime-container:hover {
+    height: 15px;
+    opacity: 1;
+}
+
+.item {
+  height: 100%;
+  float: left;
+  text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.item p {
+    display: none;
+    -webkit-user-select: none;
+}
+
+.rescuetime-container:hover .item p{
+    display: inline;
+}
+
+.darkText {
+  color: #1f1f1f
+}
+
+.lightText {
+  color: #fff;
+  text-shadow: 0 0 2px #333
+}
+
+.error {
+  color: #ff453a;
+}
